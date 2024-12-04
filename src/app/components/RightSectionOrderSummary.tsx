@@ -8,9 +8,9 @@ interface RightSectionOrderSummaryProps {
 
 const RightSectionOrderSummary: React.FC<RightSectionOrderSummaryProps> = ({ subtotal = 0, shippingFee = 0 }) => {
   return (
-    <div className="w-1/3 bg-gray-100 p-8 flex flex-col items-center">
+    <div className="flex-1 bg-gray-100 p-6 lg:p-8 flex flex-col">
       {/* Order Summary Item */}
-      <div className="flex items-center mb-6 w-full max-w-xs">
+      <div className="flex items-center mb-6">
         <Image
           src="/assets/item-1.png"
           width={80}
@@ -26,7 +26,7 @@ const RightSectionOrderSummary: React.FC<RightSectionOrderSummaryProps> = ({ sub
       </div>
 
       {/* Discount Code Section */}
-      <div className="w-full max-w-xs mb-6">
+      <div className="mb-6">
         <input
           type="text"
           placeholder="Discount / Gift Code"
@@ -38,7 +38,7 @@ const RightSectionOrderSummary: React.FC<RightSectionOrderSummaryProps> = ({ sub
       </div>
 
       {/* Summary Section */}
-      <div className="border-t border-gray-300 pt-4 w-full max-w-xs">
+      <div className="border-t border-gray-300 pt-4">
         <div className="flex justify-between mb-2">
           <span>Subtotal</span>
           <span>₱{subtotal.toFixed(2)}</span>

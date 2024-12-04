@@ -1,11 +1,11 @@
 "use client"; // Add this line at the top of your file
 
 import React, { useState } from 'react';
-import Navbar from "../components/common/NavBar";
-import Footer from "../components/common/Footer";
+import Navbar from "../../components/common/NavBar";
+import Footer from "../../components/common/Footer";
 import Image from "next/image";
-import YouMayAlsoLike from "../components/YouMayAlsoLike";
-import ProductViewCards from "../components/ProductViewCards";
+import YouMayAlsoLike from "../../components/YouMayAlsoLike";
+import ProductViewCards from "../../components/ProductViewCards";
 
 const ProductView: React.FC = () => {
   // State to track which section is expanded
